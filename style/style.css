@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 14px;
+}
+header .navbar-brand span {
+  font-size: 2.5rem;
+}
+header .navbar-brand i {
+  color: #35a22c;
+}
+.header.container {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .navbar {
+  background-color: transparent;
+  margin-top: -3rem;
+}
+header .navbar-nav .nav-item {
+  margin: 0 1rem;
+}
+header .navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item.active .nav-link {
+  color: #35a22c !important ;
+  text-decoration: 1px #35a22c;
+}
+header .navbar-nav .nav-item .nav-link:hover {
+  color: #35a22c !important;
+}
+header .navbar-nav .nav-item::after {
+  content: "";
+  width: 0;
+  display: block;
+  height: 2px;
+  background-color: #35a22c;
+  transition: all 0.5s;
+}
+header .navbar-nav .nav-item.active::after {
+  width: 100%;
+}
+header .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  header .navbar-brand span {
+    font-size: 1.6rem;
+  }
+  header .navbar-brand i {
+    font-size: 2rem;
+    color: #35a22c;
+  }
+}
+.carousel-control-prev {
+  display: none;
+  overflow: hidden;
+}
+.carousel-control-next {
+  display: none;
+  overflow: hidden;
+}
+
+/* Carousel */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner .overlay {
+  background: rgba(39, 43, 54, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#Carousel .carousel-item {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#Carousel .carousel-item:nth-child(1) {
+  background-image: url(./../img/finland.jpg);
+}
+#Carousel .carousel-item:nth-child(2) {
+  background-image: url(./../img/mountains.jpg);
+}
+#Carousel .carousel-item:nth-child(3) {
+  background-image: url(./../img/mountains-1.jpg);
+}
+#Carousel .Carousel__thumb:nth-child(1) {
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  padding: 10px;
+}
+#Carousel .Carousel__thumb {
+  width: 150px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: auto;
+}
+#Carousel .Carousel__thumb img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid rgba(70, 85, 78, 0.578);
+}
+
+#Carousel .Carousel__contant h1 {
+  font-size: 4rem;
+}
+#Carousel .Carousel__contant p {
+  font-size: 1.6rem;
+}
+#Carousel .Carousel__contant {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#Carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 4rem;
+}
+#Carousel .carousel-indicators li.active {
+  background-color: #35a22c;
+}
+.carousel-item.active .Carousel__thumb {
+  animation-name: downup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.carousel-item.active h1 {
+  animation-name: downup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+.carousel-item.active p {
+  animation-name: downup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+@keyframes downup {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* Welcome */
+#Welcome {
+  position: relative;
+  animation-duration: 2s;
+}
+#Welcome .Welcome__heading {
+  text-align: center;
+  padding: 6rem 0 2rem 0;
+  opacity: 1 !important;
+}
+#Welcome .Welcome__heading h1 {
+  color: black !important;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+#Welcome .Welcome__heading p {
+  font-size: 1rem;
+  width: 75%;
+  margin: 0 auto;
+}
+#Welcome .overlay {
+  position: absolute;
+  background-image: url(./../img/memphis_2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.51);
+}
+ .Welcome__content.aos-animate .progress-bar {
+  background: linear-gradient(to right, #33a336, #11a7c0);
+  animation-name: progress;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.Welcome__content {
+  padding-bottom: 6rem;
+}
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+.col-md-4 {
+  margin: 1rem 0;
+}
+.col-md-4 h4 {
+  font-weight: 900;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.progress {
+  height: 6px;
+}
+
+/* featrue */
+#featrue {
+  background-image: url(./../img/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed;
+  padding: 8rem;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(7, 10, 12, 0.72);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#featrue .container {
+  color: white;
+}
+#featrue .container .featrue__heading {
+  position: relative;
+  text-align: center;
+}
+#featrue .container .featrue__heading h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+#featrue .container .featrue__heading p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 24px;
+  padding-bottom: 4rem;
+}
+#featrue .container .featrue-item {
+  background-color: #30393871;
+  text-align: center;
+  width: 100%;
+  height: 320px;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #333e3dde;
+}
+#featrue .container .featrue-item:hover {
+  background: black;
+  opacity: 1;
+  border: white solid 1px;
+}
+#featrue .container .featrue-item i {
+  font-size: 3rem;
+  padding: 1.4rem 0;
+  color: #33a336;
+}
+#featrue .container .featrue-item h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 0.4rem 0;
+  letter-spacing: 1px;
+}
+#featrue .container .featrue-item p {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff !important;
+  padding-top: 1rem;
+  font-size: 14px;
+}
+/* project */
+#project {
+  padding: 6rem 0;
+}
+#project .container .project__heading {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#project .container .project__heading h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+}
+#project .container .project__heading p {
+  width: 75%;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #585858;
+}
+
+.container .project__content .nav {
+  text-align: center;
+  justify-content: center;
+}
+.container .project__content .nav .nav-item .nav-link {
+  border: 1px solid #1a1d2d;
+  margin: 0 5px;
+  border-radius: 0.25rem;
+  display: block;
+  color: #1a1d2d;
+}
+.tab-content .tab-pane{
+  padding-top: 1rem !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #35a22c;
+  color: #fff !important;
+  border: 1px solid #35a22c !important;
+}
+.row .card {
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 0.4rem rgb(0 0 0 / 13%);
+  cursor: pointer;
+}
+.row .card .card-img-top {
+  flex-shrink: 0;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+.row .card .card-img-top img {
+  vertical-align: middle;
+  border-style: none;
+}
+.row .card .card-body {
+  border: 1px solid transparent;
+  border-radius: 0 0 1rem 1rem;
+  transition: all 0.5s;
+}
+.row .card:hover .card-body {
+  border-right: 1px solid #33a336;
+  border-left: 1px solid #33a336;
+  border-bottom: 1px solid #33a336;
+  overflow: hidden;
+  border-radius: 0 0 1rem 1rem;
+}
+.row .card {
+  animation-name: zoomIn;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+/* Edu */
+#Edu {
+  background: #272b36 url(./../img/memphis_2.png) no-repeat top right;
+  background-size: cover;
+  height: 1000px;
+  color: white;
+}
+@media (min-width: 1200px) {
+}
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1140px;
+  padding-top: 4rem !important;
+}
+#Edu .container .edu__contant {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+  padding: 3rem;
+  margin-top: 4rem;
+}
+#Edu .container .edu__contant .row h3 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 4rem;
+}
+#Edu .container .edu__contant .row .edu__item {
+  margin: 1rem 0;
+}
+#Edu .container .edu__contant .row .edu__item h5 {
+  padding: 6px 10px 6px 10px;
+  border: 2px solid #35a22c;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+#Edu .container .edu__contant .row .edu__item h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+#Edu .container .edu__contant .row .edu__item p {
+  opacity: 0.7;
+}
+
+#Award {
+  position: relative;
+  color: #585858;
+  padding: 70px 0;
+}
+#Award .overlay__award {
+  background-image: url(../img/memphis_3.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.row .award__left {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+  padding: 45px;
+  max-width: 750px;
+}
+.row .award__left h2 {
+  font-size: 2.2rem;
+  color: black;
+  font-weight: 900;
+}
+.row .award__left p {
+  font-size: 1rem;
+  color: #585858;
+  line-height: 24px;
+}
+.row .award__right {
+  padding: 3rem 0;
+  font-size: 1rem;
+}
+/* footer */
+footer {
+  background: #222;
+  padding: 2rem 0 !important;
+}
+footer .container {
+  max-width: 1140px;
+}
+footer .container .footer__main {
+  margin: -3rem 0 3rem 0 !important;
+}
+footer .container .footer__main a {
+  margin-right: 10px;
+  color: #aaa;
+  text-decoration: none;
+  background-color: transparent;
+}
+footer .container .footer__main a i {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 50%;
+  border: 1px solid #454545;
+  transition: all 0.5s;
+}
+footer .container .footer__main a:hover i{
+  border: 1px solid #35a22c;
+  color: #35a22c;
+}
+footer .container .footer__copies {
+  border-top: 1px solid #454545;
+  padding-top: 30px;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+footer .container .footer__copies p{
+  color: #aaa;
+}
+footer .container .footer__copies p a{
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+footer .container .footer__copies p a:hover{
+  color: #35a22c;
+}

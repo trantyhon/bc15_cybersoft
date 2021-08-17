@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- gg font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- css style -->
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header container">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-dice-d20 fa-3x"></i> <span>CyberPortfolio</span></a
+        >
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- carousel -->
+    <section id="Carousel">
+      <!-- data-ride="carousel" -->
+      <div id="Carousel__list" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li
+            data-target="#Carousel__list"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#Carousel__list" data-slide-to="1"></li>
+          <li data-target="#Carousel__list" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <div class="Carousel__contant carousel-caption container text-white">
+              <div class="Carousel__thumb">
+                <img src="./img/01-3.jpg" alt="" />
+              </div>
+              <h1>Our goals. Our mission.</h1>
+              <p>How we help other companies to grow.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <div class="Carousel__contant carousel-caption container text-white">
+              <div class="Carousel__thumb">
+                <img src="./img/02-3.jpg" alt="" />
+              </div>
+              <h1>Our goals. Our mission.</h1>
+              <p>How we help other companies to grow.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <div class="Carousel__contant carousel-caption container text-white">
+              <div class="Carousel__thumb">
+                <img src="./img/03-3.jpg" alt="" />
+              </div>
+              <h1>Our goals. Our mission.</h1>
+              <p>How we help other companies to grow.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a
+          class="carousel-control-prev"
+          href="#Carousel__list"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#Carousel__list"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="Welcome" data-aos="fade-up" data-aos-duration="2000" >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="Welcome__heading">
+          <h1>Welcome To My Site</h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc
+          </p>
+        </div>
+        <div class="Welcome__content" data-aos="fade-up" data-aos-duration="2000" >
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Design</h4>
+              <div class="progress">
+                <div class="progress-bar" style="max-width: 47%"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4>Marketing</h4>
+              <div class="progress">
+                <div class="progress-bar" style="max-width: 75%"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4>Photography</h4>
+              <div class="progress">
+                <div class="progress-bar" style="max-width: 67%"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4>Branding</h4>
+              <div class="progress">
+                <div class="progress-bar" style="max-width: 67%"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4>Development</h4>
+              <div class="progress">
+                <div class="progress-bar" style="max-width: 90%"></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h4>SEO</h4>
+              <div class="progress">
+                <div class="progress-bar" style="max-width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featrue">
+      <div class="overlay"></div>
+      <div class="container">
+        <div
+          class="featrue__heading"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <h1 class="text-white">I'm Available For Hire</h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.
+          </p>
+        </div>
+
+        <div class="featrue__cotent">
+          <div class="row">
+            <div class="col-md-4">
+              <div
+                class="featrue-item text-white"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <i class="fa fa-paint-brush"></i>
+                <h3>Design</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="featrue-item text-white"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <i class="fa fa-shekel-sign"></i>
+                <h3>Marketing</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="featrue-item text-white"
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <i class="fa fa-camera"></i>
+                <h3>Photography</h3>
+                <p>
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="project__heading">
+          <h1>I Love What I Do</h1>
+          <p class="my-3">
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+            sodales quis. Integer sit amet mattis quam.Vestibulum ante ipsum
+            primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+            Nulla mollis dapibus nunc
+          </p>
+        </div>
+        <div
+          class="project__content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <!-- Nav pills -->
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="pill" href="#pills-all"
+                >All Project</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#pills-llus"
+                >illustration</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#pills-photo"
+                >Photography</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="pill" href="#pills-web"
+                >Website</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content" data-aos="fade-up" data-aos-duration="2000">
+            <div class="tab-pane container active" id="pills-all">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g1.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Apologetic robot holding flowers
+                      </h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g2.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Woman walking her small dog</h4>
+                      <p class="card-text">Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g3.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Oil bottle branding</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g4.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Smiling Woman</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g5.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Drink can design</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g6.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">I love you hand gesture</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="pills-llus">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g1.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Apologetic robot holding flowers
+                      </h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g2.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Woman walking her small dog</h4>
+                      <p class="card-text">Illustrations</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g3.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Oil bottle branding</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="pills-photo">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g4.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Smiling Woman</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g5.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">Drink can design</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane container fade" id="pills-web">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card text-center">
+                    <img class="card-img-top" src="./img/g6.jpg" alt="" />
+                    <div class="card-body">
+                      <h4 class="card-title">I love you hand gesture</h4>
+                      <p class="card-text">Branding</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- edu -->
+    <section id="Edu">
+      <div class="container">
+        <div class="edu__contant">
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 data-aos="fade-up" data-aos-duration="2000">Experiences</h3>
+              <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
+                <h5>2018 - now</h5>
+                <h4>Fulltime Freelancer</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
+              </div>
+              <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
+                <h5>2014 - 2017</h5>
+                <h4>Creative Director at Pixar Studio</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
+              </div>
+              <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
+                <h5>2010 - 2014</h5>
+                <h4>Web Designer at Microsoft</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 data-aos="fade-up" data-aos-duration="2000">Education</h3>
+              <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
+                <h5>2010</h5>
+                <h4>Master of Design, University of California</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
+              </div>
+              <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
+                <h5>2007</h5>
+                <h4>Bachelor of Arts, Standford University</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
+              </div>
+              <div class="edu__item" data-aos="fade-up" data-aos-duration="2000">
+                <h5>2004</h5>
+                <h4>Specialize App Design, Harvard University</h4>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Award -->
+    <section id="Award">
+      <div class="overlay__award"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5">
+              <div class="award__left" data-aos="zoom-in" data-aos-duration="2000">
+                  <h2>Our Achievement and Award</h2>
+                  <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus
+                      nec ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-7">
+              <div class="award__right">
+                  <p data-aos="fade-up" data-aos-duration="2000" class="aos-init aos-animate">Luctus porta semper aptent morbi. Vestibulum lectus tempus augue dictumst enim commodo
+                      facilisis. Mus laoreet scelerisque habitant urna dui sem diam. Purus dis nam eget.
+                      Scelerisque placerat lectus lorem etiam. Elementum integer phasellus lectus.</p>
+                  <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                      <div class="col">
+                          <img class="img-fluid" src="./img/award-1.png" alt="">
+                      </div>
+                      <div class="col">
+                          <img class="img-fluid" src="./img/award-2.png" alt="">
+                      </div>
+                      <div class="col">
+                          <img class="img-fluid" src="./img/award-3.png" alt="">
+                      </div>
+                      <div class="col">
+                          <img class="img-fluid" src="./img/award-4.png" alt="">
+                      </div>
+                      <div class="col">
+                          <img class="img-fluid" src="./img/award-5.png" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center text-white" data-aos="zoom-in" data-aos-duration="2000">
+
+          <div class="footer__main">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer__copies">
+              <p>© 2021 CyberPortfolio. All rights reserved | Designed by <a href="#">CyberSoft</a></p>
+
+          </div>
+      </div>
+  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
